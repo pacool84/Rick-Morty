@@ -1,1 +1,3 @@
-console.log("Hello my friend SPA");
+import router from "./routes/index";
+
+window.addEventListener("load", router);
