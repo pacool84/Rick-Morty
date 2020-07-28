@@ -24,6 +24,10 @@ const router = async () => {
     ); /* Este es el content que se encuentra en el html en el tag de section */
 
   header.innerHTML = await Header(); /* Aqui es donde empujamos el header hacia el html */
+  let hash = getHash();
+  let route = await resolveRoutes(hash);
+  let render = routes[route] ? routes[route] : Error404;
+  content.innerHTML = await render();
 };
 
 export default router;
