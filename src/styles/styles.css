@@ -21,16 +21,16 @@ body {
 
 .Main {
   padding: 10px;
-  grid-template-columns: minmax(auto, 976px);
   display: grid;
+  /*  grid-template-columns: minmax(auto, 976px); */
   justify-content: center;
 }
 
 .Characters {
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1.5rem;
   grid-row-gap: 1.5em;
-  display: grid;
 }
 
 .Characters-inner {
@@ -44,11 +44,12 @@ body {
   text-decoration: none;
   box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06),
     1px 3px 8px rgba(39, 44, 49, 0.03);
-  border-radius: 5px;
+  border-radius: 15px;
   margin: 0 0 20px 0;
   display: block;
   animation-duration: 2s;
   animation-name: fade;
+  color: #3498db;
 }
 
 .Characters-card img {
@@ -58,7 +59,7 @@ body {
 }
 
 .Characters-card h2 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   text-align: center;
 }
